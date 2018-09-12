@@ -1,0 +1,22 @@
+[
+  {
+    "id":"1",
+    "fileName": "logo.png"
+  },
+  {
+    "id":"2",
+    "fileName": "carousel_1.jpg"
+  },
+  {
+    "id":"3",
+    "fileName": "carousel_2.jpg"
+  },
+  {
+    "id":"4",
+    "fileName": "carousel_3.jpg"
+  },
+  {
+    "id":"5",
+    "fileName": "carousel_4.jpg"
+  }
+]
