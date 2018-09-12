@@ -26,14 +26,14 @@ export default class PCUserCenter extends React.Component {
 		};
 
     // 获取用户收藏的新闻数据
-		fetch('http://newsapi.gugujiankong.com/Handler.ashx?action=getuc&userid=' + localStorage.userid, myFetchOptions)
+		fetch('https://newsapi.gugujiankong.com/Handler.ashx?action=getuc&userid=' + localStorage.userid, myFetchOptions)
 		.then(response=>response.json())
 		.then(json=>{
 			this.setState({usercollection:json});
 		});
 
     // 获取用户评论的新闻数据
-		fetch('http://newsapi.gugujiankong.com/Handler.ashx?action=getusercomments&userid=' + localStorage.userid, myFetchOptions)
+		fetch('https://newsapi.gugujiankong.com/Handler.ashx?action=getusercomments&userid=' + localStorage.userid, myFetchOptions)
 		.then(response=>response.json())
 		.then(json=>{
 			this.setState({usercomments:json});
@@ -43,7 +43,7 @@ export default class PCUserCenter extends React.Component {
   
 	render() {
 		const props = {
-			action: 'http://newsapi.gugujiankong.com/handler.ashx',
+			action: 'https://newsapi.gugujiankong.com/handler.ashx',
 			headers: {
 				'Access-Control-Allow-Origin': '*'
 			},
@@ -53,8 +53,8 @@ export default class PCUserCenter extends React.Component {
 					uid: -1,
 					name: 'xxx.png',
 					state: 'done',
-					url: 'https://os.alipayobjects.com/rmsportal/NDbkJhpzmLxtPhB.png',
-					thumbUrl: 'https://os.alipayobjects.com/rmsportal/NDbkJhpzmLxtPhB.png'
+					url: 'httpss://os.alipayobjects.com/rmsportal/NDbkJhpzmLxtPhB.png',
+					thumbUrl: 'httpss://os.alipayobjects.com/rmsportal/NDbkJhpzmLxtPhB.png'
 				}
 			],
 			onPreview: (file) => {

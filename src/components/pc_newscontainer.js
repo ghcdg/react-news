@@ -37,10 +37,10 @@ export default class PCNewsContainer extends React.Component {
               <Card title='今日推荐' bordered={false} style={{ width: 380 }}>
                   <div className='carousel'>
                     <Carousel {...settings}>
-                      <div><a href='http://sports.qq.com/a/20130428/000505_all.htm' target='_blank'><img src={imageDatas[1].imageURL}/></a></div>
-                      <div><a href='http://china.findlaw.cn/info/xzss/ssfg/ssf/1246253.html' target='_blank'><img src={imageDatas[2].imageURL}/></a></div>
-                      <div><a href='http://sports.163.com/18/0911/12/DRE1NUFT0005877U.html' target='_blank'><img src={imageDatas[3].imageURL}/></a></div>
-                      <div><a href='http://tech.qq.com/a/20180911/046544.htm' target='_blank'><img src={imageDatas[4].imageURL}/></a></div>
+                      <div><a href='https://sports.qq.com/a/20130428/000505_all.htm' target='_blank'><img src={imageDatas[1].imageURL}/></a></div>
+                      <div><a href='https://china.findlaw.cn/info/xzss/ssfg/ssf/1246253.html' target='_blank'><img src={imageDatas[2].imageURL}/></a></div>
+                      <div><a href='https://sports.163.com/18/0911/12/DRE1NUFT0005877U.html' target='_blank'><img src={imageDatas[3].imageURL}/></a></div>
+                      <div><a href='https://tech.qq.com/a/20180911/046544.htm' target='_blank'><img src={imageDatas[4].imageURL}/></a></div>
                     </Carousel>
                   </div>
               </Card>
