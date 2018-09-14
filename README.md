@@ -2,6 +2,8 @@
 news project by react
 
 ### 在线效果展示：Demo: https://www.donglixia.club/react-news
+项目效果功能图：
+![image](https://github.com/ghcdg/react-news/blob/master/src/images/pro.png)
 
 ### 说明
 
@@ -41,3 +43,8 @@ news project by react
 ### 注：
 项目中的dist文件夹是已经打包好的项目文件:下载后可直接打开dist文件的index.html查看效果【index.html和assets为打包后最终生成的文件】 
 
+#### readme.md添加图片
+
+" \!\[image]\(此处为github中查看图片时的url地址) "
+
+如：" \!\[image]\(https://github.com/ghcdg/react-news/blob/master/src/images/pro.png) "
