@@ -4,7 +4,6 @@ import MobileFooter from './mobile_footer';
 import {Tabs, Carousel} from 'antd';
 const TabPane = Tabs.TabPane;
 import MobileList from './mobile_list';
-import imageDatas from './get_images';
 
 export default class MobileIndex extends React.Component {
 	render() {
@@ -20,14 +19,14 @@ export default class MobileIndex extends React.Component {
 				<MobileHeader></MobileHeader>
 				<Tabs>
 					<TabPane tab='头条' key='1'>
-						<div className='carousel'>
-							<Carousel {...settings}>
-                  <div><img src={imageDatas[1].imageURL}/></div>
-									<div><img src={imageDatas[2].imageURL}/></div>
-									<div><img src={imageDatas[3].imageURL}/></div>
-									<div><img src={imageDatas[4].imageURL}/></div>
-							</Carousel>
-						</div>
+            <div>       
+                <Carousel {...settings}>
+                  <div><a href='https://sports.qq.com/a/20130428/000505_all.htm'><img src={ require('../images/carousel_1.jpg') } alt='carousel_1'/></a></div>
+                  <div><a href='https://china.findlaw.cn/info/xzss/ssfg/ssf/1246253.html'><img src={ require('../images/carousel_2.jpg') } alt='carousel_2'/></a></div>
+                  <div><a href='https://sports.163.com/18/0911/12/DRE1NUFT0005877U.html'><img src={ require('../images/carousel_3.jpg') } alt='carousel_3'/></a></div>
+                  <div><a href='https://tech.qq.com/a/20180911/046544.htm'><img src={ require('../images/carousel_4.jpg') } alt='carousel_4'/></a></div>
+                </Carousel>
+				    </div>
 						<MobileList count={20} type='top'/>
 					</TabPane>
 					<TabPane tab='社会' key='2'>

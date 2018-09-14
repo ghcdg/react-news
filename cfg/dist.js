@@ -12,7 +12,7 @@ let BowerWebpackPlugin = require('bower-webpack-plugin');
 let config = Object.assign({}, baseConfig, {
   entry: path.join(__dirname, '../src/index'),
   cache: false,
-  devtool: 'sourcemap',
+  devtool: 'eval-source-map',
   plugins: [
     new webpack.optimize.DedupePlugin(),
     new webpack.DefinePlugin({
@@ -21,7 +21,13 @@ let config = Object.assign({}, baseConfig, {
     new BowerWebpackPlugin({
       searchResolveModulesDirectories: false
     }),
-    new webpack.optimize.UglifyJsPlugin(),
+    new webpack.optimize.UglifyJsPlugin(
+      {
+        compress: {
+          warnings: false
+        }
+      }
+    ),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.AggressiveMergingPlugin(),
     new webpack.NoErrorsPlugin()

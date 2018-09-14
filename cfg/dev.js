@@ -14,8 +14,9 @@ let config = Object.assign({}, baseConfig, {
     'webpack/hot/only-dev-server',
     './src/index'
   ],
+
   cache: true,
-  devtool: 'eval-source-map',
+  // devtool: 'eval-source-map',
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
@@ -30,6 +31,7 @@ let config = Object.assign({}, baseConfig, {
 config.module.loaders.push({
   test: /\.(js|jsx)$/,
   loader: 'react-hot!babel-loader',
+  exclude: '/node_modules/',
   include: [].concat(
     config.additionalPaths,
     [ path.join(__dirname, '/../src') ]

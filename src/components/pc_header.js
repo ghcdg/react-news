@@ -13,7 +13,6 @@ import {
 const FormItem = Form.Item;
 const TabPane = Tabs.TabPane;
 import {Link} from 'react-router';
-import imageDatas from './get_images';
 
 class PCHeader extends React.Component {
 	constructor() {
@@ -112,7 +111,7 @@ class PCHeader extends React.Component {
 					<Col span={2}></Col>
 					<Col span={4}>
 						<a href='/' className='logo'>
-              <img src={imageDatas[0].imageURL} alt='logo'/>
+              <img src={ require('../images/logo.png') } alt='logo'/>
 							<span>ReactNews</span>
 						</a>
 					</Col>

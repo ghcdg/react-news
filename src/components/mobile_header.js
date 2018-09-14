@@ -11,7 +11,6 @@ import {
 const FormItem = Form.Item;
 const TabPane = Tabs.TabPane;
 import {Link} from 'react-router';
-import imageDatas from './get_images';
 
 class MobileHeader extends React.Component {
 	constructor() {
@@ -89,9 +88,9 @@ class MobileHeader extends React.Component {
 		return (
 			<div id='mobileheader'>
 				<header>
-					<a href='/'>
-            <img src={imageDatas[0].imageURL} alt='logo'/>
-						<span>ReactNews</span>
+          <a href='/'>
+          <img src={ require('../images/logo.png') } alt='logo'/>
+						<span>ReactNews3</span>
 					</a>
 					{userShow}
 				</header>

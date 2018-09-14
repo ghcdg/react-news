@@ -6,7 +6,8 @@
   "scripts": {
     "clean": "rimraf dist/*",
     "copy": "copyfiles -f ./src/index.html ./src/favicon.ico ./dist",
-    "dist": "npm run copy & webpack --env=dist",
+    "dist": "npm run copy & webpack --mode=development --profile --env=dist",
+    "build": "npm run copy & webpack --mode=production --profile --env=dist",
     "lint": "eslint ./src",
     "posttest": "npm run lint",
     "release:major": "npm version major && npm publish && git push --follow-tags",

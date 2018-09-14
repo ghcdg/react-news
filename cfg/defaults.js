@@ -20,7 +20,8 @@ function getDefaultModules() {
       {
         test: /\.(js|jsx)$/,
         include: srcPath,
-        exclude: /node_modules/,
+        exclude: '/node_modules/',
+        include: './src',
         loader: 'eslint-loader',
       }
     ],
@@ -65,5 +66,5 @@ module.exports = {
   srcPath: srcPath,
   publicPath: '/assets/',
   port: dfltPort,
-  getDefaultModules: getDefaultModules
+  getDefaultModules: getDefaultModules  
 };
