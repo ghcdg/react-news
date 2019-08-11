@@ -1,5 +1,5 @@
 # react-news
-news project by react
+news project by react (已不维护)
 
 ### 在线效果展示：Demo: https://ghcdg.github.io/react-news
 项目效果功能图：
@@ -8,6 +8,9 @@ news project by react
 ### 说明
 
 工具、框架：yeoman、webpack、react、Ant Design等
+
+### 项目内容
+主要功能包括：主界面的注册、登录，主界面的新闻数据获取、展示，个人中心的评论、收藏，PC客户端与手机客户端的适配等。
 
 ### 项目下载以及运行
 1、下载项目: 使用git命令：git clone git@github.com:ghcdg/react-news.git     或者 git clone https://github.com/ghcdg/react-news.git 进行下载
