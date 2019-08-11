@@ -1,7 +1,7 @@
 # react-news
 news project by react
 
-### 在线效果展示：Demo: https://www.donglixia.club/react-news
+### 在线效果展示：Demo: https://ghcdg.github.io/react-news
 项目效果功能图：
 ![image](https://github.com/ghcdg/react-news/blob/master/src/images/pro.png)
 
